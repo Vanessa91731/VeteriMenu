@@ -1,0 +1,49 @@
+
+<html lang="es">
+    <head>
+        <title>Veterinaria</title>
+        <link rel="stylesheet" href="/static/css1.css"></linkrel>
+    </head>
+    
+    <div class="contenedor">
+        <img src="/static/imagenes/huella.jpg" width="180px">
+        <div class="centrado">VETERINARIA VANE</div>
+        </div>
+    <style>
+        .contenedor{
+            position: relative;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .centrado{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
+    <body>
+
+        <nav>
+            <ul>
+            <li><a href="/index">Principal</a></li>
+            <li><a href="/caballos">Caballos</a></li>
+            <li><a href="/pollos">Pollos</a></li>
+            <li><a href="/ovejas">Ovejas</a></li>
+            <li><a href="/contacto">Contacto</a></li>
+            <li><a href="/crud">Crud</a></li>
+            </ul>
+        </nav>
+
+        {% block content %}
+        {% endblock %}
+
+        <footer>
+            <p>Para mas informacion consulte:<br>
+                ############
+            </p>
+        </footer>
+    </body>
+</html>
